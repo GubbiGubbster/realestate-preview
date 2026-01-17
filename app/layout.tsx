@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { Footerdemo as Footer } from "@/components/ui/footer-section"
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${outfit.variable} ${playfair.variable} antialiased bg-white text-slate-900 font-sans`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

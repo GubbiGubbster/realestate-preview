@@ -9,11 +9,21 @@ export default function PropertiesPage() {
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
-            <div className="bg-primary/5 pb-12 pt-32">
-                {/* Header */}
-                <div className="container mx-auto px-6 mb-12 text-center">
-                    <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">All Properties</h1>
-                    <p className="text-muted-foreground max-w-2xl mx-auto">Browse our exclusive collection of the world's most extraordinary homes.</p>
+            <div className="relative h-[40vh] min-h-[400px] flex items-center justify-center">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="/properties-header.jpg"
+                        alt="Properties Header"
+                        className="w-full h-full object-cover object-top"
+                    />
+                    <div className="absolute inset-0 bg-black/50" /> {/* Dark Overlay */}
+                </div>
+
+                {/* Content */}
+                <div className="container mx-auto px-6 relative z-10 text-center text-white">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4">All Properties</h1>
+                    <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-light tracking-wide">Browse our exclusive collection of the world's most extraordinary homes.</p>
                 </div>
             </div>
 
