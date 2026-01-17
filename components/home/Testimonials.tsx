@@ -82,12 +82,12 @@ export function Testimonials() {
     return (
         <section className="py-12 bg-white border-t border-gray-100 overflow-hidden">
             <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-                <Marquee pauseOnHover className="[--duration:40s]">
+                <Marquee reverse pauseOnHover className="[--duration:40s]">
                     {firstRow.map((review) => (
                         <ReviewCard key={review.username} {...review} />
                     ))}
                 </Marquee>
-                <Marquee reverse pauseOnHover className="[--duration:40s]">
+                <Marquee pauseOnHover className="[--duration:40s]">
                     {secondRow.map((review) => (
                         <ReviewCard key={review.username} {...review} />
                     ))}

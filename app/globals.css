@@ -28,8 +28,8 @@
   animation: marquee-vertical var(--duration) linear infinite;
 }
 
-.animate-reverse {
-  animation-direction: reverse;
+.animate-marquee-reverse {
+  animation: marquee var(--duration) linear infinite reverse;
 }
 
 .paused {
