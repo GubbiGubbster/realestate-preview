@@ -19,11 +19,12 @@
   --radius-radius: var(--radius);
 }
 
-@utility animate-marquee {
+/* Animation Utilities - Using standard CSS to ensure compatibility */
+.animate-marquee {
   animation: marquee var(--duration) linear infinite;
 }
 
-@utility animate-marquee-vertical {
+.animate-marquee-vertical {
   animation: marquee-vertical var(--duration) linear infinite;
 }
 

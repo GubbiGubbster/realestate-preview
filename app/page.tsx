@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/home/Hero";
 import { FeaturedProperties } from "@/components/home/FeaturedProperties";
+import { Testimonials } from "@/components/home/Testimonials";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <FeaturedProperties />
+      <Testimonials />
     </main>
   );
 }
