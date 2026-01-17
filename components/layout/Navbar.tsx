@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, Search, ChevronDown } from "lucide-react"
+import { Menu, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export function Navbar() {
@@ -61,9 +61,7 @@ export function Navbar() {
                     "flex items-center space-x-6 transition-colors",
                     showScrolledStyle ? "text-primary" : "text-white"
                 )}>
-                    <button aria-label="Search" className="hover:text-accent transition-colors">
-                        <Search className="w-5 h-5" />
-                    </button>
+
                     <div className="relative group">
                         <button
                             className="flex items-center gap-1 hover:text-accent transition-colors font-medium text-sm tracking-wide"
