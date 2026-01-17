@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, Search, User } from "lucide-react"
+import { Menu, Search, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export function Navbar() {
@@ -64,9 +64,21 @@ export function Navbar() {
                     <button aria-label="Search" className="hover:text-accent transition-colors">
                         <Search className="w-5 h-5" />
                     </button>
-                    <button aria-label="Account" className="hover:text-accent transition-colors">
-                        <User className="w-5 h-5" />
-                    </button>
+                    <div className="relative group">
+                        <button
+                            className="flex items-center gap-1 hover:text-accent transition-colors font-medium text-sm tracking-wide"
+                        >
+                            ENG <ChevronDown className="w-3 h-3" />
+                        </button>
+                        <div className="absolute right-0 top-full mt-2 w-24 bg-white rounded-sm shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out border border-gray-100">
+                            <button className="w-full text-left px-4 py-2 text-xs font-medium text-gray-900 hover:bg-gray-50 hover:text-primary transition-colors">
+                                ENG
+                            </button>
+                            <button className="w-full text-left px-4 py-2 text-xs font-medium text-gray-500 hover:bg-gray-50 hover:text-primary transition-colors">
+                                ARA
+                            </button>
+                        </div>
+                    </div>
                     <button aria-label="Menu" className="md:hidden hover:text-accent transition-colors">
                         <Menu className="w-6 h-6" />
                     </button>
