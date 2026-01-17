@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function Hero() {
     return (
@@ -39,7 +40,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.4 }}
                 >
                     <p className="text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto mb-10 text-white/90">
-                        Discover a curated collection of the world's most extraordinary homes.
+                        Discover a curated collection of the Qatar's most extraordinary homes.
                     </p>
                 </motion.div>
 
@@ -51,10 +52,12 @@ export function Hero() {
                     className="w-full max-w-md"
                 >
                     <div className="flex flex-col md:flex-row gap-4">
-                        <button className="flex-1 bg-white text-primary px-8 py-4 font-medium tracking-wide hover:bg-white/90 transition-colors flex items-center justify-center gap-2 group">
-                            Browse Properties
-                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        <Link href="/properties" className="flex-1">
+                            <button className="w-full bg-white text-primary px-8 py-4 font-medium tracking-wide hover:bg-white/90 transition-colors flex items-center justify-center gap-2 group">
+                                Browse Properties
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </button>
+                        </Link>
                         <button className="flex-1 border border-white/30 backdrop-blur-sm text-white px-8 py-4 font-medium tracking-wide hover:bg-white/10 transition-colors">
                             Sell Your Home
                         </button>

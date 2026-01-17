@@ -43,7 +43,7 @@ export function PropertyFilter() {
 function SelectGroup({ label, options }: { label: string, options: string[] }) {
     return (
         <div className="relative group">
-            <select className="w-full appearance-none bg-gray-50 border border-gray-200 px-4 py-2.5 text-sm text-gray-700 outline-none focus:border-primary cursor-pointer">
+            <select className="w-full appearance-none bg-gray-50 border border-gray-200 pl-4 pr-10 py-2.5 text-sm text-gray-700 outline-none focus:border-primary cursor-pointer">
                 <option value="">{label}</option>
                 {options.map(opt => (
                     <option key={opt} value={opt}>{opt}</option>
