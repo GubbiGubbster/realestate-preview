@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { TextAnimate } from "@/components/ui/text-animate"
 
 export function Hero() {
     return (
@@ -24,15 +25,14 @@ export function Hero() {
 
             {/* Content */}
             <div className="relative z-20 h-full container mx-auto px-6 flex flex-col justify-center items-center text-center text-white">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                >
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight mb-6">
-                        Live Without <br /> Compromise
-                    </h1>
-                </motion.div>
+                <div className="flex flex-col items-center mb-6">
+                    <TextAnimate animation="slideUp" by="word" className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-white">
+                        Live Without
+                    </TextAnimate>
+                    <TextAnimate animation="slideUp" by="word" startDelay={0.3} className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-white">
+                        Compromise
+                    </TextAnimate>
+                </div>
 
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
