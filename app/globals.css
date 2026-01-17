@@ -28,6 +28,14 @@
   animation: marquee-vertical var(--duration) linear infinite;
 }
 
+.animate-reverse {
+  animation-direction: reverse;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
 /* Keyframes must be defined globally for some Tailwind configurations */
 @keyframes marquee {
   from {
