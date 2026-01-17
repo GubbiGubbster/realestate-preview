@@ -52,7 +52,7 @@ export function Navbar() {
                 )}>
                     <Link href="/properties" className="hover:text-accent transition-colors">Properties</Link>
                     <Link href="/agents" className="hover:text-accent transition-colors">Agents</Link>
-                    <Link href="/journal" className="hover:text-accent transition-colors">Journal</Link>
+                    <Link href="/about" className="hover:text-accent transition-colors">About Us</Link>
                     <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
                 </div>
 
